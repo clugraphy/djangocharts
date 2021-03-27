@@ -1,13 +1,30 @@
-{% extends 'base.html' %}
-{% block content %}
+{% extends 'base.html' %} {% block content %}
 
 <div class="card text-center">
   <div class="card-body">
-    <h1>Welcome To Pollster</h1>
-    <p>This is an example Django polling app</p>
+    <h1>Welcome To HTF Finance</h1>
+    <p>This is how to kill time and make money</p>
     <a class="btn btn-dark" href="{% url 'polls:index' %}">
-        View Available Polls</a
-      >
+      View Available Polls</a
+    >
   </div>
+</div>
+
+<div class="card text-center">
+  <div class="card-body">
+    <h1>Get task done with the help of the comunity</h1>
+    <p>You can do so much more in teams</p>
+    <a class="btn btn-dark" href="{% url 'todolist:todolist' %}"> Tasks</a>
+   
   </div>
+</div>
+
+<div class="card text-center">
+  <div class="card-body">
+    <h1>Are you ready to invest in the future</h1>
+    <p>Act now because the time is ticking</p>
+    <a class="btn btn-dark" href="{% url 'register' %}"> Register</a>
+    <a class="btn btn-dark" href="{% url 'login' %}"> Login</a>
+  </div>
+</div>
 {% endblock %}

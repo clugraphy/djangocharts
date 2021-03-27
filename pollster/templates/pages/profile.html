@@ -1,0 +1,25 @@
+{% extends 'base.html' %}
+
+{% block content %}
+
+{% if user.is_authenticated %}
+
+<h2>{% block title %} Profile {% endblock %}</h2>
+<div class="container">
+
+    {% comment %} <img class="rounded-circle profile-picture" src="{{ user.profile.profile_picture.url }}"> {% endcomment %}
+    <div class="text-container">
+    <p>Username: {{ user }} </p>
+        {% comment %} <p>Bio: {{ user.profile.bio }}</p>
+        <p>Nickname: {{ user.profile.nickname }}</p> {% endcomment %}
+        <p>Email: {{ user.email }}</p>
+    </div>
+</div>
+
+{% else %}
+
+<p>Login to view your details</p>
+
+{% endif %}
+
+{% endblock %}

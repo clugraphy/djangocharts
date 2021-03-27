@@ -1,0 +1,20 @@
+{% extends 'base.html' %} {% block title %} {% load static %}
+<title>Homepage - Taskmate</title>
+{% endblock title %} {% block content %}
+<div class="container">
+  <div class="row mt-5">
+      <div class="col-md-10 offset-md-1">
+        <center>
+          <p class="h1 mt-5 text-primary">Quick And Easy To Use, Anytime , Anywhere!</p>
+        </center>
+        <center><p class="h2 mt-3">Plan and win the game of programming</p></center>
+        <center><p class="h5 text-success">Take tasks that you feel like</p></center>
+
+        <center>
+         <a class="btn btn-primary btn-lg" href="{% url 'todolist:todolist' %}" role="button">Get Started</a> 
+        </center>
+      </div>
+    </div>
+  </div>
+
+{% endblock content %}

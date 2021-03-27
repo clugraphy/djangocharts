@@ -20,4 +20,9 @@ urlpatterns = [
     path('', include('pages.urls')),
     path('polls/', include('polls.urls')),
     path('admin/', admin.site.urls),
+    # path('profile/', views.view_profile, name="profile"),
+    path('pages/', include('pages.urls')),
+    path('todolist/', include('todolist.urls')),
+
+   
 ]

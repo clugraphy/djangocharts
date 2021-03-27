@@ -1,4 +1,5 @@
 <!DOCTYPE html>
+{% load static %}
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -10,14 +11,16 @@
       integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
       crossorigin="anonymous"
     />
-    <title>Pollster {% block title %}{% endblock %}</title>
+    <link rel="stylesheet" href="{% static 'main.css' %}">
+
+    <title>HTF Finance {% block title %}{% endblock %}</title>
   </head>
   <body>
     <!-- NavBar -->
     {% include 'partials/_navbar.html' %}
     <div class="container">
       <div class="row">
-        <div class="col-md-6 m-auto">
+        <div class="col-md-12 m-auto">
           {% block content %}{% endblock %}
         </div>
       </div>
